@@ -1,0 +1,101 @@
+[
+{
+    'question': 'Who is considered the final prophet in Islam?',
+    'options': ['Prophet Muhammad (PBUH)', 'Prophet Adam (AS)', 'Prophet Isa (AS)', 'Prophet Musa (AS)'],
+    'correct_answer': 'Prophet Muhammad (PBUH)'
+},
+{
+    'question': 'What is the holy book of Islam?',
+    'options': ['Quran', 'Bible', 'Torah', 'Vedas'],
+    'correct_answer': 'Quran'
+},
+{
+    'question': 'In which city was Prophet Muhammad (PBUH) born?',
+    'options': ['Mecca', 'Medina', 'Jerusalem', 'Cairo'],
+    'correct_answer': 'Mecca'
+},
+{
+    'question': 'What is the first pillar of Islam?',
+    'options': ['Shahada (Faith)', 'Salah (Prayer)', 'Zakat (Charity)', 'Sawm (Fasting)'],
+    'correct_answer': 'Shahada (Faith)'
+},
+{
+    'question': 'What is the night journey of Prophet Muhammad (PBUH) called?',
+    'options': ['Isra and Mi\'raj', 'Hijra', 'Fajr', 'Lailat al-Qadr'],
+    'correct_answer': 'Isra and Mi\'raj'
+},
+{
+    'question': 'What is the name of the first wife of Prophet Muhammad (PBUH)?',
+    'options': ['Khadijah bint Khuwaylid', 'Aisha bint Abi Bakr', 'Fatimah bint Muhammad', 'Safiyya bint Huyayy'],
+    'correct_answer': 'Khadijah bint Khuwaylid'
+},
+{
+    'question': 'Which Islamic month is known as the month of fasting?',
+    'options': ['Ramadan', 'Shawwal', 'Dhu al-Hijjah', 'Muharram'],
+    'correct_answer': 'Ramadan'
+},
+{
+    'question': 'What is the pilgrimage to Mecca called?',
+    'options': ['Hajj', 'Umrah', 'Ziyarat', 'Tawaf'],
+    'correct_answer': 'Hajj'
+},
+{
+    'question': 'What is the name of the angel who brought revelations to Prophet Muhammad (PBUH)?',
+    'options': ['Gabriel (Jibril)', 'Michael (Mikail)', 'Raphael', 'Azrael'],
+    'correct_answer': 'Gabriel (Jibril)'
+},
+{
+    'question': 'What is the term for the Islamic declaration of faith?',
+    'options': ['Shahada', 'Salat', 'Zakat', 'Sawm'],
+    'correct_answer': 'Shahada'
+},
+{
+    'question': 'What is the Islamic concept of charity or almsgiving called?',
+    'options': ['Zakat', 'Sadaqah', 'Hajj', 'Umrah'],
+    'correct_answer': 'Zakat'
+},
+{
+    'question': 'What is the name of the Islamic month during which the Quran was revealed?',
+    'options': ['Ramadan', 'Shawwal', 'Dhu al-Hijjah', 'Muharram'],
+    'correct_answer': 'Ramadan'
+},
+{
+    'question': 'What is the term for the Islamic pilgrimage to Medina?',
+    'options': ['Umrah', 'Hijra', 'Tawaf', 'Ziyarat'],
+    'correct_answer': 'Umrah'
+},
+{
+    'question': 'What is the term for the evening prayer in Islam?',
+    'options': ['Isha', 'Fajr', 'Dhuhr', 'Asr'],
+    'correct_answer': 'Isha'
+},
+{
+    'question': 'What is the name of the Islamic declaration of faith in Arabic?',
+    'options': ['Shahada', 'Salat', 'Zakat', 'Sawm'],
+    'correct_answer': 'Shahada'
+},
+{
+    'question': 'What is the name of the place where Muslims circumambulate the Kaaba?',
+    'options': ['Masjid al-Haram', 'Masjid al-Nabawi', 'Mount Arafat', 'Mount Uhud'],
+    'correct_answer': 'Masjid al-Haram'
+},
+{
+    'question': 'What is the term for the Islamic prayer leader?',
+    'options': ['Imam', 'Mufti', 'Sheikh', 'Mullah'],
+    'correct_answer': 'Imam'
+},
+{
+    'question': 'What is the name of the Islamic holiday commemorating the willingness of Ibrahim (AS) to sacrifice his son?',
+    'options': ['Eid al-Adha', 'Eid al-Fitr', 'Lailat al-Miraj', 'Lailat al-Qadr'],
+    'correct_answer': 'Eid al-Adha'
+},
+{
+    'question': 'What is the term for the Islamic pilgrimage to Mecca?',
+    'options': ['Hajj', 'Umrah', 'Ziyarat', 'Tawaf'],
+    'correct_answer': 'Hajj'
+},
+{
+    'question': 'What is the term for the daily obligatory prayers in Islam?',
+    'options': ['Salah', 'Sawm', 'Zakat', 'Hajj'],
+    'correct_answer': 'Salah'
+}

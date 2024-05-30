@@ -28,7 +28,7 @@ class QuizStarter:
 
     
     def continue_pressed(self):
-        if self.current_page == 1:
+        if self.current_page == 1 or 3:
             # Change to the second page
             self.open_window = open_window
             self.current_page = 2  # Keep track of the current page
@@ -77,9 +77,9 @@ class QuizStarter:
                 self.current_page = 3
                 self.change_background("QuizQuestion(3).png")
                 print(self.current_page)
-                self.back_button = Button(open_window, text="GO BACK", bg="dark blue", fg="white", 
-                 font= ('Times New Roman',10,'bold'), command=self.goBack_pressed1)
-                self.back_button.place(x=50, y=350)
+                self.back_button2 = Button(open_window, text="GO BACK", bg="dark blue", fg="white", 
+                 font= ('Times New Roman',10,'bold'), command=self.goBack_pressed2)
+                self.back_button2.place(x=50, y=350)
 
 
 
@@ -87,14 +87,10 @@ class QuizStarter:
 
 
     def goBack_pressed2(self):
-        if self.current_page == 3:   
-            self.change_background("QuizQuestion(2).png")
-    
+        if self.current_page == 3:  
+            print(self.current_page)
+            self.continue_pressed()
 
-
-    
-            
-            
 
 
 
@@ -105,6 +101,6 @@ class QuizStarter:
 if __name__ == '__main__':
     open_window = Tk()
     open_window.geometry("650x400")
-    open_window.title("General Knowledge Quiz")
+    open_window.title("Islamic Quiz")
     quizstarter_object = QuizStarter(open_window)
     open_window.mainloop()
