@@ -1,6 +1,8 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import messagebox
+import random
+
 
 class QuizStarter:
     def __init__(self, open_window):
@@ -80,22 +82,88 @@ class QuizStarter:
                 self.back_button2 = Button(open_window, text="GO BACK", bg="dark blue", fg="white", 
                  font= ('Times New Roman',10,'bold'), command=self.goBack_pressed2)
                 self.back_button2.place(x=50, y=350)
+            self.next_button = Button(open_window, text="NEXT", bg="dark blue", fg="white", 
+     font=('Times New Roman',10,'bold'), command=self.next_pressed)
+            self.next_button.place(x=500, y=345)
+            self.start_button = Button(open_window, text="START", bg="dark blue", fg="white",  font=('Times New Roman',10,'bold'), command=self.start_questions)
+            self.start_button.place(x=200, y=345)
 
+    def change_widgets(self):
+        self.question_number += 1
+        self.var1.set(0)
+        self.question_label.config(text=self.questions[self.question_number][0])
+        self.first_option.config(text=self.questions[self.question_number][1])
+        self.second_option.config(text=self.questions[self.question_number][2])
+        self.third_option.config(text=self.questions[self.question_number][3])
+        self.forth_option.config(text=self.questions[self.question_number][4])
 
+    def next_pressed(self):
+        self.start_button.destroy()
+        self.answer = self.var1.get()
+        self.questions_list = []
+        if len(self.questions_list) < 7:
+            self.change_widgets()
+        else:
+            self.next_button.destroy()
+            self.back_button2.destroy()
+            
 
+        
+        
+    def start_questions(self):
+        self.questions = {
+            1: ["Who is considered the final prophet in Islam?", "Prophet Isa (Jesus)", "Prophet Musa (Moses)", "Prophet Muhammad (PBUH)", "Prophet Ibrahim (Abraham)", 3],
+            2: ["What is the holy book of Islam?", "Bible", "Torah", "Quran", "Gita", 3],
+            3: ["In which city was Prophet Muhammad (PBUH) born?", "Jerusalem", "Mecca", "Medina", "Baghdad", 2],
+            4: ["What is the name of the Islamic month of fasting?", "Ramadan", "Shawwal", "Dhul-Hijjah", "Rajab", 1],
+            5: ["How many times a day are Muslims required to pray?", "Three", "Five", "Four", "Six", 2],
+            6: ["What is the pilgrimage to Mecca called?", "Umrah", "Sawm", "Hajj", "Zakat", 3],
+            7: ["Who was the first Caliph after Prophet Muhammad (PBUH)?", "Umar", "Ali", "Abu Bakr", "Uthman", 3],
+            8: ["Which angel is believed to have brought revelations to Prophet Muhammad (PBUH)?", "Angel Michael (Mikail)", "Angel Gabriel (Jibril)", "Angel Raphael (Israfil)", "Angel Azrael (Izrail)", 2]
+        }
       
+        
+        self.question_number = 1 
+        self.question_label= Label (open_window, text=self.questions[self.question_number][0], font=("Arial", 12),padx=8, pady=35)
+        self.question_label.place(x=160, y=80)
+
+        # hold value of radio button
+        self.var1 = IntVar()
+
+        #radio button rb1
+        self.first_option= Radiobutton(open_window, text= self.questions [self.question_number][1], font=("Helvetica", "12"), value=1, padx=35,pady=5, variable=self.var1) 
+        self.first_option.place(x=54, y=215)
+
+
+        # second radion button for option 2 - rb2
+        self.second_option= Radiobutton(open_window, text= self.questions [self.question_number][1], font=("Helvetica", "12"), value=1, padx=35,pady=5, variable=self.var1) 
+        self.second_option.place(x=345, y=215)
+
+        # third radion button for option 3 - rb3
+        self.third_option= Radiobutton(open_window, text= self.questions [self.question_number][1], font=("Helvetica", "12"), value=1, padx=35,pady=5, variable=self.var1) 
+        self.third_option.place(x=54, y=287)
+
+        # fourth radion button for option 4 - rb4
+        self.forth_option= Radiobutton(open_window, text= self.questions [self.question_number][1], font=("Helvetica", "12"), value=1, padx=35,pady=5, variable=self.var1) 
+        self.forth_option.place(x=345, y=287)
+        
+
+
+        
+
+
+        
+
+        
 
 
     def goBack_pressed2(self):
         if self.current_page == 3:  
             print(self.current_page)
             self.continue_pressed()
-
-
-
-
-
-
+ 
+        
+        
     
 
 if __name__ == '__main__':
